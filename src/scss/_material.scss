@@ -1,0 +1,134 @@
+// display-4	.mat-display-4	Large, one-off header, usually at the top of the page (e.g. a hero header).
+// display-3	.mat-display-3	Large, one-off header, usually at the top of the page (e.g. a hero header).
+// display-2	.mat-display-2	Large, one-off header, usually at the top of the page (e.g. a hero header).
+// display-1	.mat-display-1	Large, one-off header, usually at the top of the page (e.g. a hero header).
+// headline	.mat-h1, .mat-headline	Section heading corresponding to the <h1> tag.
+// title	.mat-h2, .mat-title	Section heading corresponding to the <h2> tag.
+// subheading-2	.mat-h3, .mat-subheading-2	Section heading corresponding to the <h3> tag.
+// subheading-1	.mat-h4, .mat-subheading-1	Section heading corresponding to the <h4> tag.
+// body-1	.mat-body, .mat-body-1	Base body text.
+// body-2	.mat-body-strong, .mat-body-2	Bolder body text.
+// caption	.mat-small, .mat-caption	Smaller body and hint text.
+// button	None. Used only in components.	Buttons and anchors.
+// input	None. Used only in components.	Form input fields.
+
+@import '~@angular/material/theming';
+
+@import 'https://fonts.googleapis.com/css?family=Material+Icons';
+@import url(#{$url});
+
+// ============================================= xl typograpgy =========================================
+$default-typography: mat-typography-config(
+  $font-family: $font-family,
+  $display-4: mat-typography-level(112px, 112px, 300),
+  $display-3: mat-typography-level(56px, 56px, 400),
+  $display-2: mat-typography-level(45px, 48px, 400),
+  $display-1: mat-typography-level(34px, 40px, 400),
+  $headline: mat-typography-level(24px, 32px, 400),
+  $title: mat-typography-level(20px, 32px, 500),
+  $subheading-2: mat-typography-level(16px, 28px, 400),
+  $subheading-1: mat-typography-level(15px, 24px, 400),
+  $body-2: mat-typography-level(14px, 24px, 500),
+  $body-1: mat-typography-level(14px, 20px, 400),
+  $caption: mat-typography-level(12px, 20px, 400),
+  $button: mat-typography-level(14px, 14px, 500),
+  $input: mat-typography-level(15px, 1.125, 400)
+);
+
+.font-regular {
+  @include angular-material-typography($default-typography);
+}
+
+
+// ============================================= lg typograpgy =========================================
+$lg-typography: mat-typography-config(
+  $font-family: #{$font-family},
+  $display-4: mat-typography-level(112px, 112px, 300),
+  $display-3: mat-typography-level(56px, 56px, 400),
+  $display-2: mat-typography-level(45px, 48px, 400),
+  $display-1: mat-typography-level(34px, 40px, 400),
+  $headline: mat-typography-level(24px, 32px, 400),
+  $title: mat-typography-level(20px, 32px, 500),
+  $subheading-2: mat-typography-level(16px, 28px, 400),
+  $subheading-1: mat-typography-level(15px, 24px, 400),
+  $body-2: mat-typography-level(14px, 24px, 500),
+  $body-1: mat-typography-level(14px, 20px, 400),
+  $caption: mat-typography-level(12px, 20px, 400),
+  $button: mat-typography-level(14px, 14px, 500),
+  $input: mat-typography-level(16px, 1.125, 400));
+
+@media screen and (max-width: 1920px) {
+  .font-regular {
+    @include angular-material-typography($lg-typography);
+  }
+}
+
+
+// ============================================   md typography   ============================================
+$md-typography: mat-typography-config(
+  $font-family: #{$font-family},
+  $display-4: mat-typography-level(112px, 112px, 300),
+  $display-3: mat-typography-level(56px, 56px, 400),
+  $display-2: mat-typography-level(45px, 48px, 600),
+  $display-1: mat-typography-level(40px, 40px, 500),
+  $headline: mat-typography-level(35px, 32px, 350),
+  $title: mat-typography-level(30px, 32px, 500),
+  $subheading-2: mat-typography-level(22px, 28px, 500),
+  $subheading-1: mat-typography-level(15px, 24px, 400),
+  $body-2: mat-typography-level(18px, 20px, 600),
+  $body-1: mat-typography-level(18px, 25px, 400),
+  $caption: mat-typography-level(16px, 20px, 400),
+  $button: mat-typography-level(20px, 14px, 400),
+  $input: mat-typography-level(16px, 1.25, 400));
+
+@media screen and (max-width: 1280px) {
+  .font-regular {
+    @include angular-material-typography($md-typography);
+  }
+}
+
+// ============================================   sm typography   ============================================
+$sm-typography: mat-typography-config(
+  $font-family: #{$font-family},
+  $display-4: mat-typography-level(112px, 112px, 300),
+  $display-3: mat-typography-level(56px, 56px, 400),
+  $display-2: mat-typography-level(45px, 48px, 350),
+  $display-1: mat-typography-level(40px, 40px, 500),
+  $headline: mat-typography-level(35px, 32px, 350),
+  $title: mat-typography-level(30px, 32px, 500),
+  $subheading-2: mat-typography-level(16px, 18px, 900), //
+  $subheading-1: mat-typography-level(14px, 18px, 400),
+  $body-2: mat-typography-level(16px, 16px, 500), //
+  $body-1: mat-typography-level(25px, 13px, 300), //
+  $caption: mat-typography-level(23px, 12px, 400),
+  $button: mat-typography-level(23px, 18px, 300), //
+  $input: mat-typography-level(16px, 1.25, 400));
+
+@media screen and (max-width: 960px) {
+  .font-regular {
+    @include angular-material-typography($sm-typography);
+  }
+}
+
+// ============================================   xs typography   ============================================
+$xs-typography: mat-typography-config(
+  $font-family: #{$font-family},
+  $display-4: mat-typography-level(112px, 112px, 300),
+  $display-3: mat-typography-level(56px, 56px, 400),
+  $display-2: mat-typography-level(45px, 48px, 350),
+  $display-1: mat-typography-level(40px, 40px, 500),
+  $headline: mat-typography-level(35px, 32px, 350),
+  $title: mat-typography-level(20px, 32px, 500),
+  $subheading-2: mat-typography-level(16px, 18px, 900), //
+  $subheading-1: mat-typography-level(14px, 18px, 400),
+  $body-2: mat-typography-level(16px, 16px, 500), //
+  $body-1: mat-typography-level(20px, 12px, 300), //
+  $caption: mat-typography-level(9px, 12px, 400),
+  $button: mat-typography-level(20px, 18px, 300), //
+  $input: mat-typography-level(16px, 1.25, 400));
+
+@media screen and (max-width: 600px) {
+  .font-regular {
+    @include angular-material-typography($xs-typography);
+  }
+}

@@ -1,0 +1,8 @@
+@import '~angular-material-css-vars/main';
+ 
+// optional 
+$mat-css-dark-theme-selector: '.isDarkTheme';
+$mat-css-light-theme-selector: '.isLightTheme';
+ 
+// init theme 
+@include init-material-css-vars() {};
