@@ -1,2 +1,2 @@
 import 'core-js/modules/es.array.includes';
-import 'zone.js/dist/zone'; 
+import 'zone.js'; 
