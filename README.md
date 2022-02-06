@@ -38,6 +38,10 @@ run `ng xi18n`
 ## Run command using configs in package.json
 `npm run <cmd>`
 
+## Step by step guide
+```
+https://youtu.be/zSUGig8bycs
+```
 
 ## The project has been successfully compiled with the following versions
 ```
